@@ -1,0 +1,114 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Register on imagenecsi with valid username and password",
+        "description": "",
+        "id": "imagenecsi-login;register-on-imagenecsi-with-valid-username-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 65945484,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.stepdefination.Stepdefination.hit_the_imageneCsi_url(Stepdefination.java:33)\r\n\tat ✽.Given hit the imageneCsi url(features/cucumber.feature:4)\r\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "hit the imageneCsi url",
+            "match": {
+              "location": "Stepdefination.hit_the_imageneCsi_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "enter the valid username \"raviiolead@yopmail.com\" and password \"oefhwf\" in the text box",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user should be logged into the application successfully",
+            "match": {
+              "location": "Stepdefination.user_should_be_logged_into_the_application_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": ": Register on imagenecsi with invalid username and password",
+        "description": "",
+        "id": "imagenecsi-login;:-register-on-imagenecsi-with-invalid-username-and-password;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 278776,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.stepdefination.Stepdefination.hit_the_imageneCsi_url(Stepdefination.java:33)\r\n\tat ✽.Given hit the imageneCsi url(features/cucumber.feature:9)\r\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "hit the imageneCsi url",
+            "match": {
+              "location": "Stepdefination.hit_the_imageneCsi_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "enter the invalid \"hgdfsghdfjgs\" and \"g3434treg\" in the text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hgdfsghdfjgs",
+                  "offset": 19
+                },
+                {
+                  "val": "g3434treg",
+                  "offset": 38
+                }
+              ],
+              "location": "Stepdefination.enter_the_invalid_and_in_the_text_box(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "error message should be displayed",
+            "match": {
+              "location": "Stepdefination.error_message_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "imagenecsi login",
+    "description": "",
+    "id": "imagenecsi-login",
+    "keyword": "Feature",
+    "uri": "features/cucumber.feature"
+  }
+]

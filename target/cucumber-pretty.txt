@@ -1,0 +1,26 @@
+Feature: imagenecsi login
+
+  Scenario: Register on imagenecsi with valid username and password                              # features/cucumber.feature:3
+    Given hit the imageneCsi url                                                                 # Stepdefination.hit_the_imageneCsi_url()
+      java.lang.NullPointerException
+      	at com.stepdefination.Stepdefination.hit_the_imageneCsi_url(Stepdefination.java:33)
+      	at ✽.Given hit the imageneCsi url(features/cucumber.feature:4)
+
+    When enter the valid username "raviiolead@yopmail.com" and password "oefhwf" in the text box
+    Then user should be logged into the application successfully                                 # Stepdefination.user_should_be_logged_into_the_application_successfully()
+
+  Scenario Outline: : Register on imagenecsi with invalid username and password # features/cucumber.feature:8
+    Given hit the imageneCsi url
+    When enter the invalid "<username>" and "<password>" in the text box
+    Then error message should be displayed
+
+    Examples: 
+
+  Scenario Outline: : Register on imagenecsi with invalid username and password # features/cucumber.feature:14
+    Given hit the imageneCsi url                                                # Stepdefination.hit_the_imageneCsi_url()
+      java.lang.NullPointerException
+      	at com.stepdefination.Stepdefination.hit_the_imageneCsi_url(Stepdefination.java:33)
+      	at ✽.Given hit the imageneCsi url(features/cucumber.feature:9)
+
+    When enter the invalid "hgdfsghdfjgs" and "g3434treg" in the text box       # Stepdefination.enter_the_invalid_and_in_the_text_box(String,String)
+    Then error message should be displayed                                      # Stepdefination.error_message_should_be_displayed()
